@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madloren | Sepetim</title>
+     <!-- CSS only -->
+     <link rel="stylesheet" href="bootstrap1/bootstrap.min.css">
+     <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+  <div class="navigations container-fluid ">
+    <div class="row">
+     <!-- navs-tabs -->
+     <div class=" col-12 order-md-1 order-2 ">
+        <div class="content">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="login.html"><i class="fa-solid fa-user"></i>Giriş</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>Beğendiklerim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shopping.html"><i class="fa-solid fa-cart-shopping"></i>Sepetim</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="container col-lg-10 col-md-12 m-auto order-md-2 order-3 order-1">
+        <div class="content">
+            <nav class="navbar col-lg bg-white">
+                <div class="container-fluid ">
+                  <a class="navbar-brand .col-lg-3 .col-md-offset-3" href="/index.html"><img src="img/logo/logo_1.svg" alt=""></a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-sm-1" type="search" placeholder="Site içi arama" aria-label="Search">
+                    <button class="btn btn-outline" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- shoppingcard2 -->
+<div class="container-fluid mt-5">
+<div class="row justify-content-center">
+  <div class="col-md-8 col-xs-4">
+  <h2 class="mb-5 text-center">Sepetim</h2>
+      <div class="table-responsive">
+        <table id="myTable" class="table">
+          <thead>
+            <tr>
+              <th>Ürün</th>
+              <th>Kategori</th>
+              <th>Miktar</th>
+              <th>Fiyat</th>
+              <th>Toplam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product-img">
+                  <div class="img-prdct">
+                    <img src="img/urunler/telefon/iphone_11.jfif" alt="">
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>İphone 11</p>
+              </td>
+              <td>
+                <div class="button-container">
+                  <button class="cart-qty-plus1" type="button" value="+">+</button>
+                  <input id="value1" type="text" name="qty" min="0" class="qty form-control" value="0">
+                  <button class="cart-qty-minus1" type="button" value="-">-</button>
+                </div>
+              </td>
+              <td>
+                <input id="p1" class="esb" type="text" value="72" class="price form-control" disabled>
+              </td>
+              <td>
+                <strong><span id="total1" class="total">0</span> $</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-img">
+                  <div class="img-prdct">
+                    <img src="img/urunler/bilgisayar/asus_x509fa.JPG" alt="">
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>Asus X509FA</p>
+              </td>
+              <td>
+                <div class="button-container">
+                  <button class="cart-qty-plus2" type="button" value="+">+</button>
+                  <input id="value2" type="text" name="qty" min="0" class="qty form-control" value="0">
+                  <button class="cart-qty-minus2" type="button" value="-">-</button>
+                </div>
+              </td>
+              <td>
+                <input type="text" value="125" class="esb" class="price form-control" disabled>
+              </td>
+              <td>
+                <strong><span id="total2" class="total">0</span> $</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-img">
+                  <div class="img-prdct">
+                    <img src="img/urunler/oyun/xbox_ser.jfif" alt="">
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>Microsoft Xbox</p>
+              </td>
+              <td>
+                <div class="button-container">
+                  <button class="cart-qty-plus3" type="button" value="+">+</button>
+                  <input id="value3" type="text" name="qty" min="0" class="qty form-control" value="0">
+                  <button class="cart-qty-minus3" type="button" value="-">-</button>
+                </div>
+              </td>
+              <td>
+                <input type="text" value="250" class="esb" class="price form-control" disabled>
+              </td>
+              <td>
+                <strong><span id="total3" class="total">0</span> $</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product-img">
+                  <div class="img-prdct">
+                    <img src="img/urunler/tv/samsung_55.jfif" alt="">
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p>Samsung 55</p>
+              </td>
+              <td>
+                <div class="button-container">
+                  <button class="cart-qty-plus4" type="button" value="+">+</button>
+                  <input id="value4" type="text" name="qty" min="0" class="qty form-control" value="0">
+                  <button class="cart-qty-minus4" type="button" value="-">-</button>
+                </div>
+              </td>
+              <td>
+                <input type="text" value="300" class="esb" class="price form-control" disabled>
+              </td>
+              <td>
+                <strong><span id="total4" class="total">0</span> $</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+        
+</div>
+
+
+
+<!-- Kupon -->
+<section id="card-bottom" class="container">
+    <div class="row">
+      <div class="coupon col-lg-6 col-md-6 col-12 mt-5">
+        <div>
+          <h5>Kupon</h5>
+          <p>Kupon kodunuzu giriniz.</p>
+          <input type="text" placeholder="Kupon Kodu">
+          <button>Uygula</button>
+        </div>
+      </div>
+      <div class="total col-lg-6 col-md-6 col-12 mt-5">
+        <div>
+          <h5>Toplam Sepet</h5>
+          <div class="d-flex justify-content-between">
+            <h6>Ara Toplam</h6>
+            <p id="aratoplam" class="p-2">25.000 $</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Kargo</h6>
+            <p id="kargo" class="p-2">25 $</p>
+          </div>
+          <hr class="second-hr">
+          <div class="d-flex justify-content-between">
+            <h6>Toplam</h6>
+            <p id="nihaitoplam" class="p-2">25.000 $</p>
+          </div>
+          <button>Devam Et</button>
+        </div>
+      </div>
+    </div>
+</section>
+
+        <!-- footer -->
+    <footer class="container-fluid mt-4">
+        <div class="row">
+            <div class="footer-wrap">
+                <div class="container first_class">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6">
+                        <h3>İlk alan sen ol</h3>
+                        <p>Madloren Hizmetleri, Teknoloji ile ilgili en son bilgileri alın.Haber bülteni için bugün kayıt olun.</p>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <form class="newsletter d-flex justify-content-center">
+                            <input type="text" placeholder="Email Adresiniz"> 
+                            <button class="newsletter_submit_btn ms-1 mt-2" type="submit"><i class="fa-sharp fa-solid fa-paper-plane"></i></button>  
+                      </form>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                      <div class="col-md-12">
+                        <div class="standard_social_links">
+                      <div>
+                        <li class="round-btn btn-facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="round-btn btn-linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li class="round-btn btn-twitter"><a href="https://twitter.com/"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="round-btn btn-instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="round-btn btn-whatsapp"><a href="https://www.whatsapp.com/?lang=tr"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        <li class="round-btn btn-envelop"><a href="https://myaccount.google.com/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                      </div>
+                    </div>  
+                      </div>
+                        <div class="clearfix"></div>
+                      <div class="col-md-12"><h3 style="text-align: right;">Bağlı Kalın</h3></div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="second_class">
+                    <div class="container second_class_bdr">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6">
+                        <div class="footer-logo"><a href="index.html"><img src="img/logo/logo_1.svg" alt="logo"></a>
+                        </div>
+                        <p>Teknolojiye dair herşeyi bulabileceğiniz tek duraklı platformunuz.</p>
+                      </div>
+                      <div class="col-md-2 col-sm-6">
+                        <h3>Kurumsal</h3>
+                        <ul class="footer-links">
+                          <li><a href="index.html">Anasayfa</a>
+                          </li>
+                          <li><a href="about.html">Hakkımızda</a>
+                          </li>
+                          <li><a href="contact.html">Bize Ulaşın</a>
+                          </li>
+                          <li><a href="conditions.html" target="_blank">Şartlar &amp; Koşullar</a>
+                          </li>
+                          <li><a href="security.html" target="_blank">Gizlilik Politikası</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <h3>Hizmetlerimiz</h3>
+                        <ul class="footer-category">
+                          <li><a href="bilgisayar.html">Bilgisayar & Tablet</a>
+                          </li>
+                          <li><a href="yazicilar.html">Yazıcılar & Projeksiyon</a>
+                          </li>
+                          <li><a href="telefon.html">Telefon & Aksesuarları</a>
+                          </li>
+                          <li><a href="tv.html">TV & Ses Sistemleri</a>
+                          </li>
+                          <li><a href="foto.html">Foto & Kamera</a>
+                          </li>
+                          <li><a href="oyun.html">Oyun Konsolları</a>
+                          </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <h3>Ödeme</h3>
+                        <ul class="footer-links">
+                          <li><a href="payment.html">Ödeme Seçenekleri</a>
+                          </li>
+              
+                          <li><a href="bank.html">Banka Kampanyaları</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="container-fluid">
+                    <div class="copyright"> Copyright 2022 | All Rights Reserved by MADLOREN.</div>
+                    </div>
+                    
+                  </div>
+                </div>
+        </div>
+      </footer>
+     
+  <!-- JavaScript Bundle with Popper -->
+     <script src="bootstrap1/bootstrap.bundle.min.js"></script>
+      <!-- Fontawasome -->
+    
+    <script src="https://kit.fontawesome.com/60279085f9.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/shopping.js"></script>
+</body>
+</html>
